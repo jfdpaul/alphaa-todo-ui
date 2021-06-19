@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  margin: 5px 0px;
+}
+
+.todoItem {
+  background-color: rgba(200,200,200,0.3);
+  padding: 7px;
+  &:hover {
+    background-color: rgba(200, 200, 200, 0.7);  
+  }
+}
+
+
+.todoItemInput, .todoItem {
+  flex-grow: 1;
+  border-radius: 5px;
+}
+
+.actions {
+  display: flex;
+}
+
+.button {
+  color: white;
+  padding: 10px;
+  min-width: 70px;
+  border-radius: 5px;
+  border: 2px solid;
+}
+
+.delete {
+  background-color: red;
+}
+
+.edit {
+  background-color: blue;
+  margin: 0px 0px 0px 5px;
+}
+.save {
+  background-color: green;
+  margin: 0px 0px 0px 5px;
+}
