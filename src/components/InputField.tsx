@@ -9,7 +9,7 @@ const InputField: FunctionComponent<{
 
     return <div className={styles.container}>
         <input className={styles.inputField} placeholder='type a todo here' value={todoInput} onChange={(e) => setTodoInput(e.target.value)} />
-        <button className={styles.button} onClick={() => handleAdd(todoInput)}>+</button>
+        <button className={styles.button} onClick={() => { handleAdd(todoInput); setTodoInput('') }}>+</button>
     </div>;
 };
 
