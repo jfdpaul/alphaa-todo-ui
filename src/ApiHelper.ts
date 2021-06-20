@@ -1,7 +1,7 @@
 import { Todo } from "@jfdpaul/alphaa-todo-dto";
 import { callAPI } from "./requests";
 
-const baseUrl = 'http://localhost:3001/todos';
+const baseUrl = process.env.BASE_URL || 'http://localhost:3001/todos';
 
 class ApiHelper {
   async getTodos(): Promise<Todo[]> {
